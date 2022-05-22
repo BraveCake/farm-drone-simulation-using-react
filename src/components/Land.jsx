@@ -93,15 +93,15 @@ function Land({land, cropType, numberOfPlants, ...props}) {
             height: "230px"
         }}>
             {land.drone.boxStatus === 'open' ? (
-                <img className="drone-box open" src="/images/drone-box-opened.png" draggable={false}/>
+                <img className="drone-box open" src="/images/drone-box-opened.PNG" draggable={false}/>
             ) : (
                 <img onClick={() => {
                     goOutSide()
                     startJob()
-                }} className="drone-box" src="/images/drone-box.png" draggable={false}/>
+                }} className="drone-box" src="/images/drone-box.PNG" draggable={false}/>
             )}
             <img className="drone" src="/images/drone.gif" draggable={false} style={land.drone.style} />
-            <img className="land-part" src="/images/land-start.png" style={{marginRight: '-5px'}}  draggable={false}/>
+            <img className="land-part" src="/images/land-start.PNG" style={{marginRight: '-5px'}}  draggable={false}/>
             {
                 land.plants.map((item, idx) => {
                     console.log('item', item)
@@ -110,7 +110,7 @@ function Land({land, cropType, numberOfPlants, ...props}) {
                         )
                 })
             }
-            <img className="land-part" src="/images/land-end.png" style={{marginLeft: '-5px'}}  draggable={false}/>
+            <img className="land-part" src="/images/land-end.PNG" style={{marginLeft: '-5px'}}  draggable={false}/>
         </div>
     );
 }

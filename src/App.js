@@ -63,7 +63,7 @@ function App() {
                         return (
                             <img key={`nav-button-${idx}`} className={`nav-button ${item.name === activeForm && 'active'}`} onClick={() => {
                                 setActiveForm(item.name)
-                            }} src={`/images/button-${item.name}.png`}/>
+                            }} src={`/images/button-${item.name}.PNG`}/>
                         );
                     })}
                 </div>
